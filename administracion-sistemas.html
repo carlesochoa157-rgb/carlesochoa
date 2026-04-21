@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carles Ochoa - Administración de Sistemas</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', sans-serif; background: #0a0e1a; color: #e0e0e0; line-height: 1.6; }
+        header { background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); padding: 2rem 1rem 1rem; text-align: center; border-bottom: 3px solid #00ff88; }
+        header h1 { font-size: 2.2rem; color: #00ff88; }
+        nav { background: #0f172a; padding: 1rem; text-align: center; position: sticky; top: 0; z-index: 100; }
+        nav a { color: #cbd5e1; text-decoration: none; margin: 0 1rem; padding: 0.5rem; }
+        nav a:hover { color: #00ff88; }
+        .container { max-width: 1000px; margin: 0 auto; padding: 2rem; }
+        .intro { background: #1e293b; border-radius: 15px; padding: 1.5rem; margin-bottom: 2rem; border-left: 4px solid #00ff88; }
+        .proyecto { background: #1e293b; border-radius: 10px; padding: 1.2rem; margin-bottom: 1rem; border: 1px solid #334155; transition: all 0.3s; }
+        .proyecto:hover { border-color: #00ff88; transform: translateX(5px); }
+        .proyecto h3 { color: #00ff88; margin-bottom: 0.5rem; }
+        .proyecto p { color: #94a3b8; margin-bottom: 0.8rem; }
+        .proyecto a { color: #00ff88; text-decoration: none; font-weight: bold; }
+        .proyecto a:hover { text-decoration: underline; }
+        footer { text-align: center; padding: 2rem; background: #0f172a; color: #64748b; margin-top: 2rem; }
+        @media (max-width: 768px) { .container { padding: 1rem; } nav a { display: inline-block; margin: 0.3rem; font-size: 0.9rem; } }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🖥️ Administración de Sistemas</h1>
+        <p>Windows Server · Linux/Ubuntu · Virtualización · Automatización</p>
+    </header>
+    <nav>
+        <a href="index.html">🏠 Inicio</a>
+        <a href="administracion-sistemas.html">🖥️ Admin Sistemas</a>
+        <a href="redes.html">🌐 Redes</a>
+        <a href="ciberseguridad.html">🔒 Ciberseguridad</a>
+        <a href="sobre-mi.html">👤 Sobre mí</a>
+        <a href="contacto.html">📫 Contacto</a>
+    </nav>
+    <div class="container">
+        <div class="intro">
+            <h2>📌 Proyectos de Administración de Sistemas</h2>
+            <p>Aquí encontrarás mis trabajos relacionados con la gestión de servidores, sistemas operativos, virtualización, scripting y hardening de sistemas.</p>
+        </div>
+        
+        <!-- Sustituye las rutas 'pdfs/...' por las tuyas reales -->
+        
+        <div class="proyecto">
+            <h3>📄 Despliegue de Active Directory en Windows Server 2022</h3>
+            <p>Configuración completa de dominio, creación de unidades organizativas (OU), gestión de usuarios y políticas de grupo (GPO).</p>
+            <a href="pdfs/asir/active-directory.pdf">🔗 Ver proyecto (PDF) →</a>
+        </div>
+        
+        <div class="proyecto">
+            <h3>📄 Hardening de servidor Ubuntu 22.04</h3>
+            <p>Aplicación de buenas prácticas de seguridad: configuración de SSH, firewall UFW, actualizaciones automáticas, auditoría con Lynis.</p>
+            <a href="pdfs/asir/hardening-ubuntu.pdf">🔗 Ver proyecto (PDF) →</a>
+        </div>
+        
+        <div class="proyecto">
+            <h3>📄 Automatización con scripts Bash y PowerShell</h3>
+            <p>Scripts para backup automático, monitorización de recursos y creación masiva de usuarios en entornos Linux y Windows.</p>
+            <a href="pdfs/asir/scripts-automatizacion.pdf">🔗 Ver proyecto (PDF) →</a>
+        </div>
+        
+        <div class="proyecto">
+            <h3>📄 Virtualización con VMware ESXi y vSphere</h3>
+            <p>Despliegue de máquinas virtuales, configuración de redes virtuales, migración en caliente y snapshots.</p>
+            <a href="pdfs/asir/vmware-esxi.pdf">🔗 Ver proyecto (PDF) →</a>
+        </div>
+        
+        <div class="proyecto">
+            <h3>📄 Administración de servidor web LAMP (Linux, Apache, MySQL, PHP)</h3>
+            <p>Instalación, configuración y hardening de un servidor web con WordPress.</p>
+            <a href="pdfs/asir/servidor-lamp.pdf">🔗 Ver proyecto (PDF) →</a>
+        </div>
+    </div>
+    <footer>
+        <p>© 2025 Carles Ochoa - Portfolio técnico | Administración de Sistemas</p>
+    </footer>
+</body>
+</html>
