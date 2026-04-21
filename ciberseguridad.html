@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carles Ochoa - Ciberseguridad</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', sans-serif; background: #0a0e1a; color: #e0e0e0; line-height: 1.6; }
+        header { background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); padding: 2rem 1rem 1rem; text-align: center; border-bottom: 3px solid #00ff88; }
+        header h1 { font-size: 2.2rem; color: #00ff88; }
+        nav { background: #0f172a; padding: 1rem; text-align: center; position: sticky; top: 0; z-index: 100; }
+        nav a { color: #cbd5e1; text-decoration: none; margin: 0 1rem; padding: 0.5rem; }
+        nav a:hover { color: #00ff88; }
+        .container { max-width: 1000px; margin: 0 auto; padding: 2rem; }
+        .intro { background: #1e293b; border-radius: 15px; padding: 1.5rem; margin-bottom: 2rem; border-left: 4px solid #00ff88; }
+        .subseccion { margin-bottom: 2rem; }
+        .subseccion h3 { color: #00ff88; margin-bottom: 1rem; font-size: 1.5rem; border-bottom: 1px solid #334155; padding-bottom: 0.5rem; }
+        .proyecto { background: #1e293b; border-radius: 10px; padding: 1.2rem; margin-bottom: 1rem; border: 1px solid #334155; transition: all 0.3s; }
+        .proyecto:hover { border-color: #00ff88; transform: translateX(5px); }
+        .proyecto h4 { color: #00ff88; margin-bottom: 0.5rem; }
+        .proyecto p { color: #94a3b8; margin-bottom: 0.8rem; }
+        .proyecto a { color: #00ff88; text-decoration: none; font-weight: bold; }
+        .proyecto a:hover { text-decoration: underline; }
+        footer { text-align: center; padding: 2rem; background: #0f172a; color: #64748b; margin-top: 2rem; }
+        @media (max-width: 768px) { .container { padding: 1rem; } nav a { display: inline-block; margin: 0.3rem; font-size: 0.9rem; } }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🔒 Ciberseguridad</h1>
+        <p>Análisis Forense · Hacking Web · Pentesting · Hardening</p>
+    </header>
+    <nav>
+        <a href="index.html">🏠 Inicio</a>
+        <a href="administracion-sistemas.html">🖥️ Admin Sistemas</a>
+        <a href="redes.html">🌐 Redes</a>
+        <a href="ciberseguridad.html">🔒 Ciberseguridad</a>
+        <a href="sobre-mi.html">👤 Sobre mí</a>
+        <a href="contacto.html">📫 Contacto</a>
+    </nav>
+    <div class="container">
+        <div class="intro">
+            <h2>📌 Proyectos de Ciberseguridad</h2>
+            <p>Especialización en análisis forense, hacking ético, auditorías web y hardening de sistemas.</p>
+        </div>
+        
+        <!-- SECCIÓN 1: ANÁLISIS FORENSE -->
+        <div class="subseccion">
+            <h3>🕵️ Análisis Forense Digital</h3>
+            
+            <div class="proyecto">
+                <h4>📄 Informe de análisis forense a disco Windows</h4>
+                <p>Adquisición de imagen forense, análisis de sistema de archivos, recuperación de archivos borrados y línea de tiempo de eventos.</p>
+                <a href="pdfs/ciberseguridad/forense/informe-forense-windows.pdf">🔗 Ver proyecto (PDF) →</a>
+            </div>
+            
+            <div class="proyecto">
+                <h4>📄 Análisis de memoria RAM con Volatility</h4>
+                <p>Dump de memoria, identificación de procesos maliciosos, conexiones de red y volcado de hashes.</p>
+                <a href="pdfs/ciberseguridad/forense/volatility-ram.pdf">🔗 Ver proyecto (PDF) →</a>
+            </div>
+            
+            <div class="proyecto">
+                <h4>📄 Investigación de tráfico de red malicioso (PCAP)</h4>
+                <p>Análisis de captura de paquetes, identificación de patrones C2, exfiltración de datos y generación de IoCs.</p>
+                <a href="pdfs/ciberseguridad/forense/pcap-malicioso.pdf">🔗 Ver proyecto (PDF) →</a>
+            </div>
+        </div>
+        
+        <!-- SECCIÓN 2: HACKING WEB -->
+        <div class="subseccion">
+            <h3>🌐 Hacking Web</h3>
+            
+            <div class="proyecto">
+                <h4>📄 Auditoría de seguridad OWASP Top 10</h4>
+                <p>Detección de vulnerabilidades: SQLi, XSS, CSRF, IDOR y SSRF en aplicación web de pruebas.</p>
+                <a href="pdfs/ciberseguridad/hacking-web/owasp-auditoria.pdf">🔗 Ver proyecto (PDF) →</a>
+            </div>
+            
+            <div class="proyecto">
+                <h4>📄 Explotación de SQL Injection (manual + sqlmap)</h4>
+                <p>Extracción de bases de datos, bypass de autenticación y escalada de privilegios mediante inyección SQL.</p>
+                <a href="pdfs/ciberseguridad/hacking-web/sql-injection.pdf">🔗 Ver proyecto (PDF) →</a>
+            </div>
+            
+            <div class="proyecto">
+                <h4>📄 Cross-Site Scripting (XSS) y robo de sesiones</h4>
+                <p>Tipos de XSS (reflejado, almacenado, DOM), explotación y mitigación con CSP y sanitización.</p>
+                <a href="pdfs/ciberseguridad/hacking-web/xss-robo-sesiones.pdf">🔗 Ver proyecto (PDF) →</a>
+            </div>
+        </div>
+        
+        <!-- SECCIÓN 3: HACKING GENERAL / PENTESTING -->
+        <div class="subseccion">
+            <h3>⚡ Pentesting y Hacking General</h3>
+            
+            <div class="proyecto">
+                <h4>📄 Escaneo y enumeración con Nmap y Masscan</h4>
+                <p>Descubrimiento de hosts, detección de servicios, versionado y scripts NSE para vulnerabilidades conocidas.</p>
+                <a href="pdfs/ciberseguridad/hacking-general/nmap-enumeracion.pdf">🔗 Ver proyecto (PDF) →</a>
+            </div>
+            
+            <div class="proyecto">
+                <h4>📄 Explotación con Metasploit (MS17-010 EternalBlue)</h4>
+                <p>Explotación de vulnerabilidad SMB en Windows 7/2008, obtención de shell reverse y post-explotación.</p>
+                <a href="pdfs/ciberseguridad/hacking-general/metasploit-eternalblue.pdf">🔗 Ver proyecto (PDF) →</a>
+            </div>
+            
+            <div class="proyecto">
+                <h4>📄 Escalada de privilegios en Linux</h4>
+                <p>Técnicas: sudo mal configurado, SUID binarios, cron jobs, kernel exploits y herramientas como LinPEAS.</p>
+                <a href="pdfs/ciberseguridad/hacking-general/escalada-privilegios-linux.pdf">🔗 Ver proyecto (PDF) →</a>
+            </div>
+            
+            <div class="proyecto">
+                <h4>📄 Hardening de sistemas y aplicaciones</h4>
+                <p>Guiado de buenas prácticas: deshabilitar servicios innecesarios, aplicar parches, configurar logs y monitorización.</p>
+                <a href="pdfs/ciberseguridad/hacking-general/hardening-guia.pdf">🔗 Ver proyecto (PDF) →</a>
+            </div>
+            
+            <div class="proyecto">
+                <h4>📄 CTF (Capture The Flag) Writeup - Máquina "Blue" de HackTheBox</h4>
+                <p>Resolución paso a paso de una máquina vulnerable, desde enumeración hasta bandera final.</p>
+                <a href="pdfs/ciberseguridad/hacking-general/ctf-blue-writeup.pdf">🔗 Ver proyecto (PDF) →</a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>© 2025 Carles Ochoa - Portfolio técnico | Especialización en Ciberseguridad</p>
+    </footer>
+</body>
+</html>
