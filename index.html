@@ -1,1 +1,256 @@
-
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carles Ochoa | Portfolio Ciberseguridad & SysAdmin</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #0a0e1a;
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+        
+        /* Header y navegación */
+        header {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            padding: 2rem 1rem 1rem;
+            text-align: center;
+            border-bottom: 3px solid #00ff88;
+        }
+        
+        header h1 {
+            font-size: 2.2rem;
+            color: #00ff88;
+            margin-bottom: 0.5rem;
+        }
+        
+        header p {
+            color: #94a3b8;
+            font-size: 1.1rem;
+        }
+        
+        nav {
+            background: #0f172a;
+            padding: 1rem;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            border-bottom: 1px solid #1e293b;
+        }
+        
+        nav a {
+            color: #cbd5e1;
+            text-decoration: none;
+            margin: 0 1.2rem;
+            padding: 0.5rem;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        nav a:hover {
+            color: #00ff88;
+        }
+        
+        /* Contenido principal */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        /* Sección hero */
+        .hero {
+            text-align: center;
+            padding: 3rem 1rem;
+            background: linear-gradient(135deg, #0f172a, #1e293b);
+            border-radius: 20px;
+            margin-bottom: 3rem;
+        }
+        
+        .hero h2 {
+            font-size: 2rem;
+            color: #00ff88;
+            margin-bottom: 1rem;
+        }
+        
+        .badge {
+            display: inline-block;
+            background: #00ff88;
+            color: #0a0e1a;
+            padding: 0.3rem 1rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            margin: 0.5rem;
+        }
+        
+        /* Tarjetas */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        
+        .card {
+            background: #1e293b;
+            border-radius: 15px;
+            padding: 1.5rem;
+            transition: transform 0.3s, box-shadow 0.3s;
+            border: 1px solid #334155;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(0, 255, 136, 0.2);
+            border-color: #00ff88;
+        }
+        
+        .card h3 {
+            color: #00ff88;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+        
+        .card ul {
+            list-style: none;
+            margin-top: 1rem;
+        }
+        
+        .card li {
+            margin: 0.5rem 0;
+            padding-left: 1.2rem;
+            border-left: 2px solid #00ff88;
+        }
+        
+        .card a {
+            color: #94a3b8;
+            text-decoration: none;
+        }
+        
+        .card a:hover {
+            color: #00ff88;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: #00ff88;
+            color: #0a0e1a;
+            padding: 0.6rem 1.2rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 1rem;
+            transition: opacity 0.3s;
+        }
+        
+        .btn:hover {
+            opacity: 0.8;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background: #0f172a;
+            margin-top: 3rem;
+            border-top: 1px solid #1e293b;
+            color: #64748b;
+        }
+        
+        @media (max-width: 768px) {
+            nav a {
+                display: inline-block;
+                margin: 0.3rem;
+                font-size: 0.9rem;
+            }
+            
+            .container {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🛡️ Carles Ochoa</h1>
+        <p>SMR · ASIR · Especialización en Ciberseguridad</p>
+    </header>
+    
+    <nav>
+        <a href="index.html">🏠 Inicio</a>
+        <a href="administracion-sistemas.html">🖥️ Admin Sistemas</a>
+        <a href="redes.html">🌐 Redes</a>
+        <a href="ciberseguridad.html">🔒 Ciberseguridad</a>
+        <a href="sobre-mi.html">👤 Sobre mí</a>
+        <a href="contacto.html">📫 Contacto</a>
+    </nav>
+    
+    <div class="container">
+        <div class="hero">
+            <h2>Bienvenido a mi portfolio técnico</h2>
+            <p>Técnico en Administración de Sistemas, Redes y Ciberseguridad</p>
+            <div>
+                <span class="badge">Windows Server</span>
+                <span class="badge">Linux/Ubuntu</span>
+                <span class="badge">pfSense</span>
+                <span class="badge">MikroTik</span>
+                <span class="badge">Análisis Forense</span>
+                <span class="badge">Hacking Ético</span>
+            </div>
+        </div>
+        
+        <div class="grid">
+            <div class="card">
+                <h3>🖥️ Administración de Sistemas</h3>
+                <p>Windows Server, Active Directory, Ubuntu, automatización con scripts, virtualización con VMware y VirtualBox.</p>
+                <ul>
+                    <li>📄 <a href="#">Despliegue de Active Directory</a></li>
+                    <li>📄 <a href="#">Automatización con PowerShell/Bash</a></li>
+                    <li>📄 <a href="#">Hardening de servidores Linux</a></li>
+                </ul>
+                <a href="administracion-sistemas.html" class="btn">Ver todos →</a>
+            </div>
+            
+            <div class="card">
+                <h3>🌐 Administración de Redes</h3>
+                <p>pfSense, MikroTik, VLANs, routing, firewalling, monitorización con Wireshark y Zabbix.</p>
+                <ul>
+                    <li>📄 <a href="#">Configuración pfSense + VLANs</a></li>
+                    <li>📄 <a href="#">RouterOS MikroTik avanzado</a></li>
+                    <li>📄 <a href="#">Análisis de tráfico con Wireshark</a></li>
+                </ul>
+                <a href="redes.html" class="btn">Ver todos →</a>
+            </div>
+            
+            <div class="card">
+                <h3>🔒 Ciberseguridad</h3>
+                <p>Análisis forense digital, hacking web (OWASP), pentesting, hardening y CTFs.</p>
+                <ul>
+                    <li>📄 <a href="#">Informe análisis forense</a></li>
+                    <li>📄 <a href="#">Auditoría web (SQLi, XSS)</a></li>
+                    <li>📄 <a href="#">Pentesting con Nmap y Metasploit</a></li>
+                </ul>
+                <a href="ciberseguridad.html" class="btn">Ver todos →</a>
+            </div>
+        </div>
+        
+        <div style="text-align: center; margin-top: 2rem;">
+            <a href="sobre-mi.html" class="btn">📖 Conoce mi trayectoria</a>
+            <a href="contacto.html" class="btn" style="background: #334155;">📬 Contacto</a>
+        </div>
+    </div>
+    
+    <footer>
+        <p>© 2025 Carles Ochoa - Portfolio técnico | SMR · ASIR · Especialización Ciberseguridad</p>
+    </footer>
+</body>
+</html>
