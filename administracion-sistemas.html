@@ -20,6 +20,7 @@
         .proyecto p { color: #94a3b8; margin-bottom: 0.8rem; }
         .proyecto a { color: #00ff88; text-decoration: none; font-weight: bold; }
         .proyecto a:hover { text-decoration: underline; }
+        .section-title { color: #00ff88; margin: 2rem 0 1rem 0; border-bottom: 1px solid #334155; padding-bottom: 0.5rem; }
         footer { text-align: center; padding: 2rem; background: #0f172a; color: #64748b; margin-top: 2rem; }
         @media (max-width: 768px) { .container { padding: 1rem; } nav a { display: inline-block; margin: 0.3rem; font-size: 0.9rem; } }
     </style>
@@ -43,37 +44,240 @@
             <p>Aquí encontrarás mis trabajos relacionados con la gestión de servidores, sistemas operativos, virtualización, scripting y hardening de sistemas.</p>
         </div>
         
-        <!-- Sustituye las rutas 'pdfs/...' por las tuyas reales -->
+        <!-- ==================== NAS SYNOLOGY ==================== -->
+        <h2 class="section-title">🛡️ Instalación y Configuración de un NAS Synology</h2>
         
         <div class="proyecto">
-            <h3>📄 Despliegue de Active Directory en Windows Server 2022</h3>
-            <p>Configuración completa de dominio, creación de unidades organizativas (OU), gestión de usuarios y políticas de grupo (GPO).</p>
-            <a href="pdfs/smr/campus.pdf">🔗 Ver proyecto (PDF) →</a>
+            <h3>📄 Gestión de cuotas en NAS Synology</h3>
+            <p>Configuración y administración de cuotas de disco para usuarios y grupos en un NAS Synology.</p>
+            <a href="sysadmin/nas/nas_quotas_CarlesOchoa.pdf">🔗 Ver proyecto (PDF) →</a>
         </div>
         
         <div class="proyecto">
-            <h3>📄 Hardening de servidor Ubuntu 22.04</h3>
-            <p>Aplicación de buenas prácticas de seguridad: configuración de SSH, firewall UFW, actualizaciones automáticas, auditoría con Lynis.</p>
-            <a href="pdfs/asir/hardening-ubuntu.pdf">🔗 Ver proyecto (PDF) →</a>
+            <h3>📄 Usuarios, grupos y permisos en un NAS</h3>
+            <p>Instalación y configuración completa de usuarios, grupos y estructura de permisos en un NAS Synology.</p>
+            <a href="sysadmin/nas/Instalación y configuración (Usuarios, grupos y permisos en un NAS)_CarlesOchoa.pdf">🔗 Ver proyecto (PDF) →</a>
+        </div>
+        
+        <!-- ==================== UBUNTU ==================== -->
+        <h2 class="section-title">🐧 Administración de servidores en Ubuntu</h2>
+        
+        <div class="proyecto">
+            <h3>📄 Práctica SSH en Ubuntu</h3>
+            <p>Configuración y hardening del servicio SSH en servidores Ubuntu.</p>
+            <a href="sysadmin/ubuntu/PrácticaSsh_CarlesOchoa.pdf">🔗 Ver proyecto (PDF) →</a>
         </div>
         
         <div class="proyecto">
-            <h3>📄 Automatización con scripts Bash y PowerShell</h3>
-            <p>Scripts para backup automático, monitorización de recursos y creación masiva de usuarios en entornos Linux y Windows.</p>
-            <a href="pdfs/asir/scripts-automatizacion.pdf">🔗 Ver proyecto (PDF) →</a>
+            <h3>📄 Montaje de servidor DNS</h3>
+            <p>Configuración de servidor DNS en Ubuntu (archivo de texto con comandos y explicaciones).</p>
+            <a href="sysadmin/ubuntu/MontarDNS_CarlesOchoa.txt">🔗 Ver proyecto (TXT) →</a>
         </div>
         
         <div class="proyecto">
-            <h3>📄 Virtualización con VMware ESXi y vSphere</h3>
-            <p>Despliegue de máquinas virtuales, configuración de redes virtuales, migración en caliente y snapshots.</p>
-            <a href="pdfs/asir/vmware-esxi.pdf">🔗 Ver proyecto (PDF) →</a>
+            <h3>📄 Servidor FTP vsftpd</h3>
+            <p>Memoria de instalación y configuración del servidor FTP vsftpd en Ubuntu.</p>
+            <a href="sysadmin/ubuntu/MemoriaVsftpd_CarlesOchoa.pdf">🔗 Ver proyecto (PDF) →</a>
         </div>
         
         <div class="proyecto">
-            <h3>📄 Administración de servidor web LAMP (Linux, Apache, MySQL, PHP)</h3>
-            <p>Instalación, configuración y hardening de un servidor web con WordPress.</p>
-            <a href="pdfs/asir/servidor-lamp.pdf">🔗 Ver proyecto (PDF) →</a>
+            <h3>📄 Servidor DHCP en Ubuntu</h3>
+            <p>Memoria de configuración del servidor DHCP en entorno Ubuntu.</p>
+            <a href="sysadmin/ubuntu/MemoriaDHCP_CarlesOchoa.pdf">🔗 Ver proyecto (PDF) →</a>
         </div>
+        
+        <div class="proyecto">
+            <h3>📄 Servidor de impresión CUPS</h3>
+            <p>Memoria de instalación y administración del servidor CUPS (impresión) en Ubuntu.</p>
+            <a href="sysadmin/ubuntu/MemoriaCups_CarlesOchoa.pdf">🔗 Ver proyecto (PDF) →</a>
+        </div>
+        
+        <div class="proyecto">
+            <h3>📄 Servidor web Apache</h3>
+            <p>Memoria de instalación, configuración y hardening de servidor web Apache en Ubuntu.</p>
+            <a href="sysadmin/ubuntu/MemoriaApache_CarlesOchoa.pdf">🔗 Ver proyecto (PDF) →</a>
+        </div>
+        
+        <div class="proyecto">
+            <h3>📄 Configuración de servidor proxy</h3>
+            <p>Configuración y despliegue de un servidor proxy en Ubuntu.</p>
+            <a href="sysadmin/ubuntu/ConfiguraciónDeProxy_CarlesOchoa.pdf">🔗 Ver proyecto (PDF) →</a>
+        </div>
+        
+        <!-- ==================== WINDOWS SERVER ==================== -->
+        <h2 class="section-title">🪟 Administración de Windows Server</h2>
+        
+        <div class="proyecto">
+            <h3>📄 Instalación Windows Server 2019, AD, Controlador Dominio y Alta de equipos</h3>
+            <p>Proceso completo de instalación de Windows Server, configuración de Active Directory y alta de equipos al dominio.</p>
+            <a href="sysadmin/ws/1. InstalaciónWindowServer2019, Active Directory, ControladorDominio y Alta de equipos_CarlesOchoa.pdf">🔗 Ver proyecto (PDF) →</a>
+        </div>
+        
+        <div class="proyecto">
+            <h3>📄 Rol DNS en Windows Server</h3>
+            <p>Configuración y administración del rol DNS en Windows Server.</p>
+            <a href="sysadmin/ws/2. RolDNS_CarlesOchoa.pdf">🔗 Ver proyecto (PDF) →</a>
+        </div>
+        
+        <div class="proyecto">
+            <h3>📄 Rol DHCP en Windows Server</h3>
+            <p>Implementación y gestión del servidor DHCP en Windows Server.</p>
+            <a href="sysadmin/ws/3. RolDHCP_CarlesOchoa.pdf">🔗 Ver proyecto (PDF) →</a>
+        </div>
+        
+        <div class="proyecto">
+            <h3>📄 Administración de usuarios</h3>
+            <p>Gestión de usuarios, grupos y cuentas en Active Directory.</p>
+            <a href="sysadmin/ws/4. Usuarios_CarlesOchoa.pdf">🔗 Ver proyecto (PDF) →</a>
+        </div>
+        
+        <div class="proyecto">
+            <h3>📄 Políticas de Grupo (GPO)</h3>
+            <p>Configuración y aplicación de políticas de grupo en entorno Windows Server.</p>
+            <a href="sysadmin/ws/5. GPO_CarlesOchoa.pdf">🔗 Ver proyecto (PDF) →</a>
+        </div>
+        
+        <div class="proyecto">
+            <h3>📄 Configuración de PSO</h3>
+            <p>Implementación de Password Settings Objects (PSO) para políticas de contraseñas granulares.</p>
+            <a href="sysadmin/ws/6. PSO_CarlesOchoa.pdf">🔗 Ver proyecto (PDF) →</a>
+        </div>
+        
+        <div class="proyecto">
+            <h3>📄 Creación de grupos de usuarios con GPO y PSO</h3>
+            <p>Creación de grupos de usuarios y aplicación combinada de GPO y PSO.</p>
+            <a href="sysadmin/ws/7. CrearGrupoUsuarios y aplicarle GPOy PSO_CarlesOchoa.pdf">🔗 Ver proyecto (PDF) →</a>
+        </div>
+        
+        <div class="proyecto">
+            <h3>📄 Recursos compartidos y ocultos</h3>
+            <p>Configuración de recursos compartidos en red y recursos administrativos ocultos.</p>
+            <a href="sysadmin/ws/8. RecursosCompartidosyOcultos_CarlesOchoa.pdf">🔗 Ver proyecto (PDF) →</a>
+        </div>
+        
+        <div class="proyecto">
+            <h3>📄 Controlador adicional de dominio</h3>
+            <p>Instalación y configuración de un controlador de dominio adicional para alta disponibilidad.</p>
+            <a href="sysadmin/ws/9. ControladorAdicional_CarlesOchoa.pdf">🔗 Ver proyecto (PDF) →</a>
+        </div>
+        
+        <div class="proyecto">
+            <h3>📄 Creación de subdominio</h3>
+            <p>Implementación y administración de un subdominio dentro del bosque de Active Directory.</p>
+            <a href="sysadmin/ws/10. Subdominio_CarlesOchoa.pdf">🔗 Ver proyecto (PDF) →</a>
+        </div>
+        
+        <div class="proyecto">
+            <h3>📄 Relación de confianza entre dominios</h3>
+            <p>Configuración de relaciones de confianza (trust) entre dominios Windows.</p>
+            <a href="sysadmin/ws/11. Relación de confianza_CarlesOchoa.pdf">🔗 Ver proyecto (PDF) →</a>
+        </div>
+        
+        <div class="proyecto">
+            <h3>📄 Creación de UO, usuarios y permisos mediante PowerShell</h3>
+            <p>Automatización con PowerShell para crear unidades organizativas, usuarios y asignar permisos.</p>
+            <a href="sysadmin/ws/12.Crear UO, usuarios y permisos mediante powershell.pdf">🔗 Ver proyecto (PDF) →</a>
+        </div>
+        
+        <!-- ==================== WINDOWS Y UBUNTU (MIXTO) ==================== -->
+        <h2 class="section-title">🔄 Administración de sistemas con Windows y Ubuntu</h2>
+        
+        <div class="proyecto">
+            <h3>📄 Administración de usuarios y grupos</h3>
+            <p>Gestión comparativa de usuarios y grupos en entornos Windows y Linux.</p>
+            <a href="sysadmin/wyu/Administración De usuarios y grupos_CarlesOchoa.pdf">🔗 Ver proyecto (PDF) →</a>
+        </div>
+        
+        <div class="proyecto">
+            <h3>📄 Administración remota</h3>
+            <p>Configuración de administración remota en sistemas Windows y Ubuntu.</p>
+            <a href="sysadmin/wyu/AdministracionRemota_CarlesOchoa.pdf">🔗 Ver proyecto (PDF) →</a>
+        </div>
+        
+        <div class="proyecto">
+            <h3>📄 Aplicar contraseña BIOS</h3>
+            <p>Procedimiento para establecer contraseña a nivel de BIOS/UEFI en equipos.</p>
+            <a href="sysadmin/wyu/AplicarContraseñaBIOS_CarlesOchoa.pdf">🔗 Ver proyecto (PDF) →</a>
+        </div>
+        
+        <div class="proyecto">
+            <h3>📄 Arranque dual</h3>
+            <p>Configuración de sistema con arranque dual Windows/Ubuntu.</p>
+            <a href="sysadmin/wyu/ArranqueDual_CarlesOchoa.pdf">🔗 Ver proyecto (PDF) →</a>
+        </div>
+        
+        <div class="proyecto">
+            <h3>📄 Arranque desde red (PXE)</h3>
+            <p>Configuración de arranque de sistemas operativos mediante red (PXE).</p>
+            <a href="sysadmin/wyu/ArranqueDesdeRed_CarlesOchoa.pdf">🔗 Ver proyecto (PDF) →</a>
+        </div>
+        
+        <div class="proyecto">
+            <h3>📄 Copias de seguridad</h3>
+            <p>Estrategias y configuración de backups en entornos Windows y Linux.</p>
+            <a href="sysadmin/wyu/Copias de seguridad_CarlesOchoa.pdf">🔗 Ver proyecto (PDF) →</a>
+        </div>
+        
+        <div class="proyecto">
+            <h3>📄 Creación de particiones</h3>
+            <p>Gestión de particiones de disco en Windows y Ubuntu.</p>
+            <a href="sysadmin/wyu/Creación de Particiones_CarlesOchoa.pdf">🔗 Ver proyecto (PDF) →</a>
+        </div>
+        
+        <div class="proyecto">
+            <h3>📄 Cuotas de disco</h3>
+            <p>Implementación de cuotas de disco en sistemas Windows y Linux.</p>
+            <a href="sysadmin/wyu/Cuotas de disco_CarlesOchoa.pdf">🔗 Ver proyecto (PDF) →</a>
+        </div>
+        
+        <div class="proyecto">
+            <h3>📄 Instalaciones de Ubuntu</h3>
+            <p>Procedimientos de instalación de sistemas Ubuntu en diferentes escenarios.</p>
+            <a href="sysadmin/wyu/InstalacionesUbuntu_CarlesOchoa.pdf">🔗 Ver proyecto (PDF) →</a>
+        </div>
+        
+        <div class="proyecto">
+            <h3>📄 NFS y SAMBA</h3>
+            <p>Configuración de servidores NFS y SAMBA para compartición de archivos entre Linux y Windows.</p>
+            <a href="sysadmin/wyu/NFS Y SAMBA_CarlesOchoa.pdf">🔗 Ver proyecto (PDF) →</a>
+        </div>
+        
+        <div class="proyecto">
+            <h3>📄 Permisos en Linux</h3>
+            <p>Gestión avanzada de permisos en sistemas de archivos Linux.</p>
+            <a href="sysadmin/wyu/Permisos en Linux_CarlesOchoa.pdf">🔗 Ver proyecto (PDF) →</a>
+        </div>
+        
+        <div class="proyecto">
+            <h3>📄 Permisos en Windows</h3>
+            <p>Administración de permisos NTFS y recursos compartidos en Windows.</p>
+            <a href="sysadmin/wyu/Permisos en Windows_CarlesOchoa.pdf">🔗 Ver proyecto (PDF) →</a>
+        </div>
+        
+        <div class="proyecto">
+            <h3>📄 Programar tareas</h3>
+            <p>Automatización de tareas mediante cron (Linux) y Tareas Programadas (Windows).</p>
+            <a href="sysadmin/wyu/Programar Tareas_CarlesOchoa.pdf">🔗 Ver proyecto (PDF) →</a>
+        </div>
+        
+        <div class="proyecto">
+            <h3>📄 Configuración de RAIDs</h3>
+            <p>Implementación de diferentes niveles de RAID en Windows y Linux.</p>
+            <a href="sysadmin/wyu/RAIDS_CarlesOchoa.pdf">🔗 Ver proyecto (PDF) →</a>
+        </div>
+        
+        <div class="proyecto">
+            <h3>📄 Restaurar gestor de arranque y modificar arranque dual</h3>
+            <p>Recuperación y modificación del gestor de arranque en sistemas duales.</p>
+            <a href="sysadmin/wyu/Restaurar Gestor de Arranque y Modificar Arranque Dual_CarlesOchoa.pdf">🔗 Ver proyecto (PDF) →</a>
+        </div>
+        
+        <div class="proyecto">
+            <h3>📄 Seguridad de cuentas de usuarios</h3>
+            <p>Buenas prácticas y políticas de seguridad para cuentas de usuario.</p>
+            <a href="sysadmin/wyu/Seguridad de cuentas de Usuarios_CarlesOchoa.pdf">🔗 Ver proyecto (PDF) →</a>
+        </div>
+        
     </div>
     <footer>
         <p>© 2025 Carles Ochoa - Portfolio técnico | Administración de Sistemas</p>
