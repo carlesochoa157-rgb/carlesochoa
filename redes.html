@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carles Ochoa - Administración de Redes</title>
+    <title>Carles Ochoa - Redes</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: 'Segoe UI', sans-serif; background: #0a0e1a; color: #e0e0e0; line-height: 1.6; }
@@ -20,14 +20,15 @@
         .proyecto p { color: #94a3b8; margin-bottom: 0.8rem; }
         .proyecto a { color: #00ff88; text-decoration: none; font-weight: bold; }
         .proyecto a:hover { text-decoration: underline; }
+        .section-title { color: #00ff88; margin: 2rem 0 1rem 0; border-bottom: 1px solid #334155; padding-bottom: 0.5rem; }
         footer { text-align: center; padding: 2rem; background: #0f172a; color: #64748b; margin-top: 2rem; }
         @media (max-width: 768px) { .container { padding: 1rem; } nav a { display: inline-block; margin: 0.3rem; font-size: 0.9rem; } }
     </style>
 </head>
 <body>
     <header>
-        <h1>🌐 Administración de Redes</h1>
-        <p>pfSense · MikroTik · VLANs · Firewalling · Monitorización</p>
+        <h1>🌐 Redes y Comunicaciones</h1>
+        <p>GNS3 · MikroTik · pfSense · VPNs · Seguridad de red · Enrutamiento</p>
     </header>
     <nav>
         <a href="index.html">🏠 Inicio</a>
@@ -39,42 +40,76 @@
     </nav>
     <div class="container">
         <div class="intro">
-            <h2>📌 Proyectos de Administración de Redes</h2>
-            <p>Configuración de firewalls, enrutadores, switches, segmentación de redes y análisis de tráfico.</p>
+            <h2>📌 Proyectos de Redes</h2>
+            <p>Aquí encontrarás mis trabajos relacionados con el diseño, configuración y seguridad de redes. Incluye prácticas con GNS3, MikroTik, pfSense, VPNs, enrutamiento y más.</p>
+        </div>
+        
+        <!-- ==================== PROYECTOS GNS3 ==================== -->
+        <h2 class="section-title">🖧 Proyectos en GNS3</h2>
+        
+        <div class="proyecto">
+            <h3>🛡️ Ataque + Mitigación MITM</h3>
+            <p>Simulación de un ataque Man-in-the-Middle (MITM) y aplicación de medidas de mitigación para proteger la red.</p>
+            <a href="redes/gns3/Ataque + Mitigación MITM_CarlesOchoa.pdf">🔗 Ver proyecto (PDF) →</a>
         </div>
         
         <div class="proyecto">
-            <h3>📄 Configuración de firewall pfSense con VLANs</h3>
-            <p>Segmentación de red en VLANs (administración, invitados, DMZ), reglas de firewall y NAT.</p>
-            <a href="pdfs/redes/pfsense-vlans.pdf">🔗 Ver proyecto (PDF) →</a>
+            <h3>📡 Captive Portal (Hotspot de MikroTik)</h3>
+            <p>Configuración de un portal cautivo (captive portal) en MikroTik para control de acceso y autenticación de usuarios.</p>
+            <a href="redes/gns3/Captive Portal (Hotspot de MikroTik)_CarlesOchoa.pdf">🔗 Ver proyecto (PDF) →</a>
         </div>
         
         <div class="proyecto">
-            <h3>📄 RouterOS MikroTik avanzado</h3>
-            <p>Configuración de enrutamiento estático y dinámico (OSPF), firewall, QoS y VPN site-to-site.</p>
-            <a href="pdfs/redes/mikrotik-avanzado.pdf">🔗 Ver proyecto (PDF) →</a>
+            <h3>🔗 Enlaces y rutas estáticas</h3>
+            <p>Configuración de enlaces entre routers y establecimiento de rutas estáticas para la comunicación entre redes.</p>
+            <a href="redes/gns3/Enlaces y rutas estáticas_CarlesOchoa.pdf">🔗 Ver proyecto (PDF) →</a>
         </div>
         
         <div class="proyecto">
-            <h3>📄 Análisis de tráfico con Wireshark</h3>
-            <p>Captura y análisis de paquetes, filtros avanzados, detección de anomalías y protocolos sospechosos.</p>
-            <a href="pdfs/redes/wireshark-analisis.pdf">🔗 Ver proyecto (PDF) →</a>
+            <h3>🔥 Hotspot + FreeRADIUS en MikroTik</h3>
+            <p>Integración de un hotspot en MikroTik con FreeRADIUS para autenticación centralizada y gestión de usuarios.</p>
+            <a href="redes/gns3/Hotspot + FreeRADIUS en MikroTik_CarlesOchoa.pdf">🔗 Ver proyecto (PDF) →</a>
         </div>
         
         <div class="proyecto">
-            <h3>📄 Monitorización de red con Zabbix</h3>
-            <p>Instalación de Zabbix, configuración de agentes, alertas y dashboards para servidores y dispositivos de red.</p>
-            <a href="pdfs/redes/zabbix-monitorizacion.pdf">🔗 Ver proyecto (PDF) →</a>
+            <h3>🏢 LAN-WAN-DMZ-PROXY</h3>
+            <p>Diseño e implementación de una arquitectura de red completa con LAN, WAN, DMZ y servidor proxy.</p>
+            <a href="redes/gns3/LAN-WAN-DMZ-PROXY_CarlesOchoa.pdf">🔗 Ver proyecto (PDF) →</a>
         </div>
         
         <div class="proyecto">
-            <h3>📄 Implementación de VPN con OpenVPN y WireGuard</h3>
-            <p>Comparativa y despliegue de servidores VPN para acceso remoto seguro.</p>
-            <a href="pdfs/redes/vpn-openvpn-wireguard.pdf">🔗 Ver proyecto (PDF) →</a>
+            <h3>🔐 VPN de acceso remoto (Cliente-Servidor)</h3>
+            <p>Configuración de una VPN de acceso remoto con arquitectura cliente-servidor para conexiones seguras externas.</p>
+            <a href="redes/gns3/VPN DE ACCESO REMOTO (CLIENTE–SERVIDOR)_CarlesOchoa.pdf">🔗 Ver proyecto (PDF) →</a>
         </div>
+        
+        <div class="proyecto">
+            <h3>🔗 VPN Site-to-Site con MikroTik</h3>
+            <p>Implementación de una VPN site-to-site entre dos routers MikroTik para conectar redes remotas de forma segura.</p>
+            <a href="redes/gns3/VPN SITE-TO-SITE CON MIKROTIK_CarlesOchoa.pdf">🔗 Ver proyecto (PDF) →</a>
+        </div>
+
+        <!-- ==================== PROYECTO PFSENSE ==================== -->
+        <h2 class="section-title">🛡️ Proyecto con pfSense</h2>
+        
+        <div class="proyecto">
+            <h3>📄 Proyecto pfSense</h3>
+            <p>Configuración y administración de firewall pfSense, incluyendo reglas, NAT, DHCP y segmentación de redes.</p>
+            <a href="redes/pfsense/ProyectoPsense_CarlesOchoa.pdf">🔗 Ver proyecto (PDF) →</a>
+        </div>
+
+        <!-- ==================== PROYECTO WIFI CASA ==================== -->
+        <h2 class="section-title">🏠 Configuración de red Wi-Fi</h2>
+        
+        <div class="proyecto">
+            <h3>📡 Router en modo Access Point (AP)</h3>
+            <p>Configuración de un router doméstico en modo Access Point para ampliar la cobertura de la red Wi-Fi.</p>
+            <a href="redes/wifi_casa/RouterModoAP_CarlesOchoa.pdf">🔗 Ver proyecto (PDF) →</a>
+        </div>
+        
     </div>
     <footer>
-        <p>© 2025 Carles Ochoa - Portfolio técnico | Administración de Redes</p>
+        <p>© 2025 Carles Ochoa - Portfolio técnico | Redes y Comunicaciones</p>
     </footer>
 </body>
 </html>
