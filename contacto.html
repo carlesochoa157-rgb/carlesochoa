@@ -2,23 +2,174 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carles Ochoa - Contacto</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: 'Segoe UI', sans-serif; background: #0a0e1a; color: #e0e0e0; line-height: 1.6; }
         header { background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); padding: 2rem 1rem 1rem; text-align: center; border-bottom: 3px solid #00ff88; }
         header h1 { font-size: 2.2rem; color: #00ff88; }
-        nav { background: #0f172a; padding: 1rem; text-align: center; }
-        nav a { color: #cbd5e1; text-decoration: none; margin: 0 1rem; }
+        nav { background: #0f172a; padding: 1rem; text-align: center; position: sticky; top: 0; z-index: 100; }
+        nav a { color: #cbd5e1; text-decoration: none; margin: 0 1rem; padding: 0.5rem; }
         nav a:hover { color: #00ff88; }
         .container { max-width: 800px; margin: 0 auto; padding: 2rem; }
-        .contact-card { background: #1e293b; border-radius: 15px; padding: 2rem; text-align: center; border: 1px solid #334155; }
-        .contact-card h2 { color: #00ff88; margin-bottom: 1rem; }
-        .contact-links { display: flex; flex-direction: column; gap: 1rem; margin: 2rem 0; }
-        .contact-link { display: flex; align-items: center; justify-content: center; gap: 1rem; background: #0f172a; padding: 1rem; border-radius: 10px; text-decoration: none; color: #e0e0e0; transition: all 0.3s; }
-        .contact-link:hover { background: #00ff88; color: #0a0e1a; transform: translateX(5px); }
-        footer { text-align: center; padding: 2rem; background: #0f172a; color: #64748b; }
-        @media (max-width: 768px) { .container { padding: 1rem; } nav a { display: inline-block; margin: 0.3rem; } }
+        
+        /* Contact card styles */
+        .contact-card {
+            background: #1e293b;
+            border-radius: 20px;
+            padding: 2rem;
+            text-align: center;
+            border: 1px solid #334155;
+            transition: all 0.3s;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+        
+        .contact-card:hover {
+            border-color: #00ff88;
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0,255,136,0.1);
+        }
+        
+        .contact-card h2 {
+            color: #00ff88;
+            margin-bottom: 1.5rem;
+            font-size: 1.8rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+        }
+        
+        .contact-links {
+            display: flex;
+            flex-direction: column;
+            gap: 1.2rem;
+            margin: 1.5rem 0;
+        }
+        
+        .contact-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            background: #0f172a;
+            padding: 1rem 1.5rem;
+            border-radius: 60px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            border: 1px solid #334155;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .contact-btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(0,255,136,0.2), transparent);
+            transition: left 0.5s;
+        }
+        
+        .contact-btn:hover::before {
+            left: 100%;
+        }
+        
+        .contact-btn .icon {
+            font-size: 1.5rem;
+            transition: transform 0.3s;
+        }
+        
+        .contact-btn:hover .icon {
+            transform: scale(1.1);
+        }
+        
+        .contact-btn .text {
+            flex: 1;
+            text-align: center;
+        }
+        
+        /* Botón LinkedIn */
+        .contact-btn.linkedin {
+            color: #00ff88;
+        }
+        
+        .contact-btn.linkedin:hover {
+            background: #0077b5;
+            border-color: #0077b5;
+            color: white;
+            transform: translateX(8px);
+        }
+        
+        .contact-btn.linkedin:hover .icon {
+            color: white;
+        }
+        
+        /* Botón Teléfono */
+        .contact-btn.phone {
+            color: #00ff88;
+        }
+        
+        .contact-btn.phone:hover {
+            background: #25D366;
+            border-color: #25D366;
+            color: white;
+            transform: translateX(8px);
+        }
+        
+        /* Botón Email */
+        .contact-btn.email {
+            color: #00ff88;
+        }
+        
+        .contact-btn.email:hover {
+            background: #EA4335;
+            border-color: #EA4335;
+            color: white;
+            transform: translateX(8px);
+        }
+        
+        /* Texto decorativo */
+        .contact-note {
+            margin-top: 1.5rem;
+            padding-top: 1rem;
+            border-top: 1px solid #334155;
+            color: #64748b;
+            font-size: 0.85rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+        }
+        
+        .contact-note span {
+            animation: pulse 1.5s infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+        
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background: #0f172a;
+            color: #64748b;
+            margin-top: 2rem;
+        }
+        
+        @media (max-width: 768px) {
+            .container { padding: 1rem; }
+            nav a { display: inline-block; margin: 0.3rem; font-size: 0.9rem; }
+            .contact-btn { padding: 0.8rem 1.2rem; font-size: 0.95rem; }
+            .contact-btn .icon { font-size: 1.3rem; }
+        }
     </style>
 </head>
 <body>
@@ -36,16 +187,31 @@
     </nav>
     <div class="container">
         <div class="contact-card">
-            <h2>🌐 Encuéntrame en</h2>
+            <h2>
+                <span>🌐</span> Encuéntrame en
+            </h2>
             <div class="contact-links">
-                <a href="https://www.linkedin.com/in/carles-ochoa-monteagudo/" target="_blank" rel="noopener noreferrer">🔗 LinkedIn</a>
-                <a href="tel:654064200">📞 654 064 200</a>
-                <a href="mailto:carlesochoa157@gmail.com">📧 carlesochoa157@gmail.com</a>
+                <a href="https://www.linkedin.com/in/carles-ochoa-monteagudo/" target="_blank" rel="noopener noreferrer" class="contact-btn linkedin">
+                    <span class="icon">🔗</span>
+                    <span class="text">LinkedIn</span>
+                </a>
+                <a href="tel:654064200" class="contact-btn phone">
+                    <span class="icon">📞</span>
+                    <span class="text">654 064 200</span>
+                </a>
+                <a href="mailto:carlesochoa157@gmail.com" class="contact-btn email">
+                    <span class="icon">📧</span>
+                    <span class="text">carlesochoa157@gmail.com</span>
+                </a>
+            </div>
+            <div class="contact-note">
+                <span>💬</span> Respuesta en menos de 24 horas
+                <span>✨</span>
             </div>
         </div>
     </div>
     <footer>
-        <p>© 2025 Carles Ochoa - Portfolio técnico</p>
+        <p>© 2025 Carles Ochoa - Portfolio técnico | Administración de Sistemas y Ciberseguridad</p>
     </footer>
 </body>
 </html>
