@@ -127,7 +127,7 @@
         }
         
         .card li {
-            margin: 0.5rem 0;
+            margin: 0.8rem 0;
             padding-left: 1.2rem;
             border-left: 2px solid #00ff88;
         }
@@ -135,6 +135,7 @@
         .card a {
             color: #94a3b8;
             text-decoration: none;
+            transition: color 0.3s;
         }
         
         .card a:hover {
@@ -209,37 +210,43 @@
         </div>
         
         <div class="grid">
+            <!-- Tarjeta Administración de Sistemas (corregida con proyectos reales) -->
             <div class="card">
                 <h3>🖥️ Administración de Sistemas</h3>
-                <p>Windows Server, Active Directory, Ubuntu, automatización con scripts, virtualización con VMware y VirtualBox.</p>
+                <p>Windows Server, Active Directory, Ubuntu, NAS Synology, virtualización y automatización con scripts.</p>
                 <ul>
-                    <li>📄 <a href="#">Despliegue de Active Directory</a></li>
-                    <li>📄 <a href="#">Automatización con PowerShell/Bash</a></li>
-                    <li>📄 <a href="#">Hardening de servidores Linux</a></li>
+                    <li>📄 <a href="administracion-sistemas.html#windows-server">Despliegue de Active Directory y controladores de dominio</a></li>
+                    <li>📄 <a href="administracion-sistemas.html#ubuntu">Servidores Ubuntu (DNS, DHCP, FTP, SSH, Proxy)</a></li>
+                    <li>📄 <a href="administracion-sistemas.html#wyu">Automatización con PowerShell y Bash</a></li>
+                    <li>📄 <a href="administracion-sistemas.html#nas">NAS Synology: usuarios, grupos, cuotas y permisos</a></li>
                 </ul>
-                <a href="administracion-sistemas.html" class="btn">Ver todos →</a>
+                <a href="administracion-sistemas.html" class="btn">Ver todos los proyectos →</a>
             </div>
             
+            <!-- Tarjeta Redes (corregida con proyectos reales) -->
             <div class="card">
                 <h3>🌐 Administración de Redes</h3>
-                <p>pfSense, MikroTik, VLANs, routing, firewalling, monitorización con Wireshark y Zabbix.</p>
+                <p>pfSense, MikroTik, VPNs, enrutamiento, captive portal, seguridad de red y monitorización.</p>
                 <ul>
-                    <li>📄 <a href="#">Configuración pfSense + VLANs</a></li>
-                    <li>📄 <a href="#">RouterOS MikroTik avanzado</a></li>
-                    <li>📄 <a href="#">Análisis de tráfico con Wireshark</a></li>
+                    <li>📄 <a href="redes.html#pfsense">Configuración y administración de pfSense</a></li>
+                    <li>📄 <a href="redes.html#gns3">VPN Site-to-Site y acceso remoto con MikroTik</a></li>
+                    <li>📄 <a href="redes.html#gns3">Hotspot + FreeRADIUS y Captive Portal</a></li>
+                    <li>📄 <a href="redes.html#gns3">Arquitectura LAN-WAN-DMZ-PROXY</a></li>
+                    <li>📄 <a href="redes.html#wifi">Router en modo Access Point (AP)</a></li>
                 </ul>
-                <a href="redes.html" class="btn">Ver todos →</a>
+                <a href="redes.html" class="btn">Ver todos los proyectos →</a>
             </div>
             
+            <!-- Tarjeta Ciberseguridad (dejada sin enlaces específicos como pides) -->
             <div class="card">
                 <h3>🔒 Ciberseguridad</h3>
-                <p>Análisis forense digital, hacking web (OWASP), pentesting, hardening y CTFs.</p>
+                <p>Próximamente: análisis forense digital, hacking web (OWASP), pentesting, hardening y CTFs.</p>
                 <ul>
-                    <li>📄 <a href="#">Informe análisis forense</a></li>
-                    <li>📄 <a href="#">Auditoría web (SQLi, XSS)</a></li>
-                    <li>📄 <a href="#">Pentesting con Nmap y Metasploit</a></li>
+                    <li>📄 <a href="#">Informe análisis forense (próximamente)</a></li>
+                    <li>📄 <a href="#">Auditoría web (SQLi, XSS) (próximamente)</a></li>
+                    <li>📄 <a href="#">Pentesting con Nmap y Metasploit (próximamente)</a></li>
                 </ul>
-                <a href="ciberseguridad.html" class="btn">Ver todos →</a>
+                <a href="ciberseguridad.html" class="btn">Ver sección →</a>
             </div>
         </div>
         
