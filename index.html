@@ -82,15 +82,20 @@
             margin-bottom: 1rem;
         }
         
-        .badge {
+        .hero p {
+            font-size: 1.2rem;
+            color: #cbd5e1;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        .hero .frase-destacada {
+            margin-top: 1.5rem;
+            font-size: 1rem;
+            color: #94a3b8;
+            border-top: 1px solid #334155;
+            padding-top: 1.5rem;
             display: inline-block;
-            background: #00ff88;
-            color: #0a0e1a;
-            padding: 0.3rem 1rem;
-            border-radius: 20px;
-            font-size: 0.8rem;
-            font-weight: bold;
-            margin: 0.5rem;
         }
         
         /* Tarjetas */
@@ -177,6 +182,10 @@
             .container {
                 padding: 1rem;
             }
+            
+            .hero p {
+                font-size: 1rem;
+            }
         }
     </style>
 </head>
@@ -198,19 +207,14 @@
     <div class="container">
         <div class="hero">
             <h2>Bienvenido a mi portfolio técnico</h2>
-            <p>Técnico en Administración de Sistemas, Redes y Ciberseguridad</p>
-            <div>
-                <span class="badge">Windows Server</span>
-                <span class="badge">Linux/Ubuntu</span>
-                <span class="badge">pfSense</span>
-                <span class="badge">MikroTik</span>
-                <span class="badge">Análisis Forense</span>
-                <span class="badge">Hacking Ético</span>
+            <p>Un espacio donde comparto los proyectos que he desarrollado en <strong>Administración de Sistemas, Redes y Ciberseguridad</strong></p>
+            <div class="frase-destacada">
+                📌 Proyectos reales · En constante evolución
             </div>
         </div>
         
         <div class="grid">
-            <!-- Tarjeta Administración de Sistemas (corregida con proyectos reales) -->
+            <!-- Tarjeta Administración de Sistemas -->
             <div class="card">
                 <h3>🖥️ Administración de Sistemas</h3>
                 <p>Windows Server, Active Directory, Ubuntu, NAS Synology, virtualización y automatización con scripts.</p>
@@ -223,7 +227,7 @@
                 <a href="administracion-sistemas.html" class="btn">Ver todos los proyectos →</a>
             </div>
             
-            <!-- Tarjeta Redes (corregida con proyectos reales) -->
+            <!-- Tarjeta Redes -->
             <div class="card">
                 <h3>🌐 Administración de Redes</h3>
                 <p>pfSense, MikroTik, VPNs, enrutamiento, captive portal, seguridad de red y monitorización.</p>
@@ -237,7 +241,7 @@
                 <a href="redes.html" class="btn">Ver todos los proyectos →</a>
             </div>
             
-            <!-- Tarjeta Ciberseguridad (dejada sin enlaces específicos como pides) -->
+            <!-- Tarjeta Ciberseguridad -->
             <div class="card">
                 <h3>🔒 Ciberseguridad</h3>
                 <p>Próximamente: análisis forense digital, hacking web (OWASP), pentesting, hardening y CTFs.</p>
