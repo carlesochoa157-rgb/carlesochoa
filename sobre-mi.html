@@ -2,28 +2,37 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carles Ochoa - Sobre mí</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: 'Segoe UI', sans-serif; background: #0a0e1a; color: #e0e0e0; line-height: 1.6; }
         header { background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); padding: 2rem 1rem 1rem; text-align: center; border-bottom: 3px solid #00ff88; }
         header h1 { font-size: 2.2rem; color: #00ff88; }
-        nav { background: #0f172a; padding: 1rem; text-align: center; }
-        nav a { color: #cbd5e1; text-decoration: none; margin: 0 1rem; }
+        nav { background: #0f172a; padding: 1rem; text-align: center; position: sticky; top: 0; z-index: 100; }
+        nav a { color: #cbd5e1; text-decoration: none; margin: 0 1rem; padding: 0.5rem; }
         nav a:hover { color: #00ff88; }
-        .container { max-width: 900px; margin: 0 auto; padding: 2rem; }
-        .section { background: #1e293b; border-radius: 15px; padding: 1.5rem; margin-bottom: 1.5rem; border-left: 4px solid #00ff88; }
-        .section h2 { color: #00ff88; margin-bottom: 1rem; }
+        .container { max-width: 1000px; margin: 0 auto; padding: 2rem; }
+        .section { background: #1e293b; border-radius: 15px; padding: 1.5rem; margin-bottom: 2rem; border-left: 4px solid #00ff88; transition: transform 0.2s; }
+        .section:hover { transform: translateX(5px); }
+        .section h2 { color: #00ff88; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem; }
         .timeline { list-style: none; }
         .timeline li { margin: 1rem 0; padding-left: 1rem; border-left: 2px solid #00ff88; }
-        footer { text-align: center; padding: 2rem; background: #0f172a; color: #64748b; }
-        @media (max-width: 768px) { .container { padding: 1rem; } nav a { display: inline-block; margin: 0.3rem; } }
+        .timeline li strong { color: #00ff88; }
+        .badge-container { display: flex; flex-wrap: wrap; gap: 0.8rem; margin-top: 1rem; }
+        .badge { background: #0f172a; padding: 0.4rem 1rem; border-radius: 20px; font-size: 0.9rem; border: 1px solid #334155; }
+        .badge:hover { border-color: #00ff88; color: #00ff88; }
+        .experiencia-item { margin-bottom: 1.5rem; }
+        .experiencia-item h3 { color: #00ff88; margin-bottom: 0.3rem; }
+        .experiencia-fecha { color: #94a3b8; font-size: 0.85rem; margin-bottom: 0.5rem; }
+        footer { text-align: center; padding: 2rem; background: #0f172a; color: #64748b; margin-top: 2rem; }
+        @media (max-width: 768px) { .container { padding: 1rem; } nav a { display: inline-block; margin: 0.3rem; font-size: 0.9rem; } }
     </style>
 </head>
 <body>
     <header>
         <h1>👤 Sobre mí</h1>
-        <p>Mi trayectoria en sistemas, redes y ciberseguridad</p>
+        <p>Administración de Sistemas · Soporte IT · Ciberseguridad</p>
     </header>
     <nav>
         <a href="index.html">🏠 Inicio</a>
@@ -34,34 +43,84 @@
         <a href="contacto.html">📫 Contacto</a>
     </nav>
     <div class="container">
+        
+        <!-- Presentación -->
         <div class="section">
-            <h2>📌 ¿Quién soy?</h2>
-            <p>Soy técnico especializado en informática con una formación que abarca desde el hardware hasta la ciberseguridad. Mi enfoque es práctico y orientado a resultados, con experiencia en entornos reales de administración y defensa de sistemas.</p>
+            <h2>📌 Hola, soy Carles Ochoa Monteagudo</h2>
+            <p>Técnico en informática especializado en <strong>administración de sistemas, soporte IT y ciberseguridad</strong>. Me motiva trabajar en equipo, compartir conocimientos y afrontar nuevos retos que me permitan seguir creciendo tanto profesional como personalmente.</p>
         </div>
+
+        <!-- Experiencia profesional -->
+        <div class="section">
+            <h2>💼 Experiencia profesional</h2>
+            
+            <div class="experiencia-item">
+                <h3>📡 Técnico de soporte IT | Aubay</h3>
+                <div class="experiencia-fecha">15/07/2025 - 15/08/2025</div>
+                <p>Soporte directo a usuarios mediante herramientas de ticketing, reparación y mantenimiento de equipos, administración de entornos Windows Server (AD, DNS, GPOs) y Ubuntu Server, gestión de almacenamiento NAS y virtualización.</p>
+            </div>
+            
+            <div class="experiencia-item">
+                <h3>⚙️ Administrador de sistemas y soporte IT | Mediphealth</h3>
+                <div class="experiencia-fecha">04/02/2025 - 23/06/2025</div>
+                <p>Administración de Windows Server y Ubuntu Server con servicios DHCP, DNS, FTP, SSH y Proxy. Configuración de Wazuh para auditoría de seguridad, monitorización con Zabbix (SNMP), virtualización con VMware, Docker y VirtualBox. Automatización con PowerShell y Bash. Gestión de NAS Synology y copias de seguridad con Veeam y Acronis. <strong>✔️ Reconocimiento: dos semanas de refuerzo en oficinas de Madrid por trabajo destacado.</strong></p>
+            </div>
+            
+            <div class="experiencia-item">
+                <h3>🛠️ Técnico de soporte IT (prácticas) | Informática Ducal</h3>
+                <div class="experiencia-fecha">20/03/2023 - 20/06/2023</div>
+                <p>Soporte a usuarios en hardware y software, sustitución de HDD por SSD, ampliación de RAM, instalación de impresoras y despliegue de sistemas operativos.</p>
+            </div>
+        </div>
+
+        <!-- Formación -->
         <div class="section">
             <h2>🎓 Formación académica</h2>
             <ul class="timeline">
-                <li><strong>🎓 Grado Medio SMR</strong> - Sistemas Microinformáticos y Redes<br><small>Hardware, redes básicas, soporte técnico</small></li>
-                <li><strong>🎓 Grado Superior ASIR</strong> - Administración de Sistemas Informáticos en Red<br><small>Windows Server, Linux, Active Directory, virtualización</small></li>
-                <li><strong>🔒 Especialización en Ciberseguridad</strong><br><small>Análisis forense, hacking ético, hardening, normativa</small></li>
+                <li><strong>🎓 Grado Medio en Sistemas Microinformáticos y Redes (SMR)</strong><br><small>Hardware, redes básicas, soporte técnico</small></li>
+                <li><strong>🎓 Grado Superior en Administración de Sistemas Informáticos en Red (ASIR)</strong><br><small>Windows Server, Linux, Active Directory, virtualización</small></li>
+                <li><strong>🔒 Curso de Especialización en Ciberseguridad</strong><br><small>Análisis forense, hacking ético, hardening, normativa</small></li>
             </ul>
         </div>
+
+        <!-- Hitos y proyectos clave -->
         <div class="section">
-            <h2>💼 Experiencia / Proyectos destacados</h2>
+            <h2>🚀 Hitos destacados</h2>
             <ul class="timeline">
-                <li><strong>Despliegue de Active Directory</strong> - Configuración completa de dominio Windows Server</li>
-                <li><strong>Infraestructura de red con pfSense y MikroTik</strong> - VLANs, reglas de firewall, monitorización</li>
-                <li><strong>Auditoría de seguridad web</strong> - Detección de vulnerabilidades OWASP Top 10</li>
-                <li><strong>Análisis forense digital</strong> - Recuperación de evidencias y elaboración de informes</li>
+                <li><strong>🛡️ Implementación de Wazuh</strong> - Servidor de auditoría de seguridad y detección de amenazas</li>
+                <li><strong>📊 Monitorización con Zabbix</strong> - Supervisión de switches vía SNMP en tiempo real</li>
+                <li><strong>💾 Gestión de backups</strong> - Configuración de copias de seguridad con Veeam Agent y Acronis</li>
+                <li><strong>🐧 Administración multiSO</strong> - Gestión integral de entornos Windows Server y Ubuntu</li>
+                <li><strong>🏆 Refuerzo en Madrid</strong> - Reconocimiento por desempeño en Mediphealth con tareas clave en el departamento IT</li>
             </ul>
         </div>
+
+        <!-- Tecnologías -->
         <div class="section">
             <h2>🛠️ Tecnologías que domino</h2>
-            <p>Windows Server, Ubuntu/Debian, pfSense, MikroTik RouterOS, Wireshark, Nmap, Metasploit, OpenVAS, Snort, VMware, VirtualBox, PowerShell, Bash, Git.</p>
+            <div class="badge-container">
+                <span class="badge">Windows Server</span>
+                <span class="badge">Ubuntu/Debian</span>
+                <span class="badge">Active Directory</span>
+                <span class="badge">DNS/DHCP</span>
+                <span class="badge">GPOs</span>
+                <span class="badge">PowerShell</span>
+                <span class="badge">Bash</span>
+                <span class="badge">VMware</span>
+                <span class="badge">Docker</span>
+                <span class="badge">VirtualBox</span>
+                <span class="badge">NAS Synology</span>
+                <span class="badge">Veeam / Acronis</span>
+                <span class="badge">Wazuh</span>
+                <span class="badge">Zabbix + SNMP</span>
+                <span class="badge">Proxy / FTP / SSH</span>
+                <span class="badge">Wireshark</span>
+                <span class="badge">Nmap</span>
+            </div>
         </div>
     </div>
     <footer>
-        <p>© 2025 Carles Ochoa - Portfolio técnico</p>
+        <p>© 2025 Carles Ochoa - Portfolio técnico | Administración de Sistemas y Ciberseguridad</p>
     </footer>
 </body>
 </html>
