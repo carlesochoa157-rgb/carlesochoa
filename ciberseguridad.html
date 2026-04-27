@@ -29,7 +29,7 @@
 <body>
     <header>
         <h1>🔒 Ciberseguridad</h1>
-        <p>Análisis Forense · Hacking Web · Pentesting · Hardening</p>
+        <p>Análisis Forense · SIEM (Wazuh) · Monitorización (Zabbix) · Incidentes</p>
     </header>
     <nav>
         <a href="index.html">🏠 Inicio</a>
@@ -42,87 +42,75 @@
     <div class="container">
         <div class="intro">
             <h2>📌 Proyectos de Ciberseguridad</h2>
-            <p>Especialización en análisis forense, hacking ético, auditorías web y hardening de sistemas.</p>
+            <p>Especialización en análisis forense digital, despliegue de SIEM (Wazuh), monitorización con Zabbix y detección de incidentes.</p>
         </div>
         
-        <!-- SECCIÓN 1: ANÁLISIS FORENSE -->
+        <!-- SECCIÓN 1: ANÁLISIS FORENSE DIGITAL -->
         <div class="subseccion">
             <h3>🕵️ Análisis Forense Digital</h3>
             
             <div class="proyecto">
-                <h4>📄 Informe de análisis forense a disco Windows</h4>
-                <p>Adquisición de imagen forense, análisis de sistema de archivos, recuperación de archivos borrados y línea de tiempo de eventos.</p>
-                <a href="pdfs/ciberseguridad/forense/informe-forense-windows.pdf">🔗 Ver proyecto (PDF) →</a>
+                <h4>💾 Clonación de discos</h4>
+                <p>Adquisición y clonado de discos para preservar evidencias digitales de forma íntegra y forensemente válida.</p>
+                <a href="forense/clonacion_discos/UD2ACT2_CarlesOchoa.pdf">🔗 Ver proyecto (PDF) →</a>
             </div>
             
             <div class="proyecto">
-                <h4>📄 Análisis de memoria RAM con Volatility</h4>
+                <h4>🧠 Análisis de memoria RAM con Volatility (I)</h4>
                 <p>Dump de memoria, identificación de procesos maliciosos, conexiones de red y volcado de hashes.</p>
-                <a href="pdfs/ciberseguridad/forense/volatility-ram.pdf">🔗 Ver proyecto (PDF) →</a>
+                <a href="forense/volatility/UD3ACT3_CarlesOchoa.pdf">🔗 Ver proyecto (PDF) →</a>
             </div>
             
             <div class="proyecto">
-                <h4>📄 Investigación de tráfico de red malicioso (PCAP)</h4>
-                <p>Análisis de captura de paquetes, identificación de patrones C2, exfiltración de datos y generación de IoCs.</p>
-                <a href="pdfs/ciberseguridad/forense/pcap-malicioso.pdf">🔗 Ver proyecto (PDF) →</a>
-            </div>
-        </div>
-        
-        <!-- SECCIÓN 2: HACKING WEB -->
-        <div class="subseccion">
-            <h3>🌐 Hacking Web</h3>
-            
-            <div class="proyecto">
-                <h4>📄 Auditoría de seguridad OWASP Top 10</h4>
-                <p>Detección de vulnerabilidades: SQLi, XSS, CSRF, IDOR y SSRF en aplicación web de pruebas.</p>
-                <a href="pdfs/ciberseguridad/hacking-web/owasp-auditoria.pdf">🔗 Ver proyecto (PDF) →</a>
+                <h4>🧠 Análisis de memoria RAM con Volatility (II)</h4>
+                <p>Análisis avanzado de volcados de memoria, detección de malware en ejecución y extracción de artefactos.</p>
+                <a href="forense/volatility/UD3ACT4_CarlesOchoa.pdf">🔗 Ver proyecto (PDF) →</a>
             </div>
             
             <div class="proyecto">
-                <h4>📄 Explotación de SQL Injection (manual + sqlmap)</h4>
-                <p>Extracción de bases de datos, bypass de autenticación y escalada de privilegios mediante inyección SQL.</p>
-                <a href="pdfs/ciberseguridad/hacking-web/sql-injection.pdf">🔗 Ver proyecto (PDF) →</a>
+                <h4>🪟 Análisis forense de discos Windows con Autopsy (I)</h4>
+                <p>Análisis de sistema de archivos NTFS, recuperación de archivos borrados y línea de tiempo de eventos.</p>
+                <a href="forense/autopsy/UD4ACT2_CarlesOchoa.pdf">🔗 Ver proyecto (PDF) →</a>
             </div>
             
             <div class="proyecto">
-                <h4>📄 Cross-Site Scripting (XSS) y robo de sesiones</h4>
-                <p>Tipos de XSS (reflejado, almacenado, DOM), explotación y mitigación con CSP y sanitización.</p>
-                <a href="pdfs/ciberseguridad/hacking-web/xss-robo-sesiones.pdf">🔗 Ver proyecto (PDF) →</a>
+                <h4>🪟 Análisis forense de discos Windows con Autopsy (II)</h4>
+                <p>Profundización en el análisis forense, extracción de evidencias y elaboración de informes periciales.</p>
+                <a href="forense/autopsy/UD4ACT3_CarlesOchoa.pdf">🔗 Ver proyecto (PDF) →</a>
+            </div>
+            
+            <div class="proyecto">
+                <h4>⚖️ Informe forense judicial</h4>
+                <p>Informe pericial completo sobre un caso real, analizando un disco Windows con metodología forense estándar.</p>
+                <a href="forense/informe forense judicial/INF-FOR-2026_INFORME_FORENSE_CarlesOchoa.pdf">🔗 Ver proyecto (PDF) →</a>
             </div>
         </div>
         
-        <!-- SECCIÓN 3: HACKING GENERAL / PENTESTING -->
+        <!-- SECCIÓN 2: SIEM Y MONITORIZACIÓN -->
         <div class="subseccion">
-            <h3>⚡ Pentesting y Hacking General</h3>
+            <h3>📊 SIEM y Monitorización de Seguridad</h3>
             
             <div class="proyecto">
-                <h4>📄 Escaneo y enumeración con Nmap y Masscan</h4>
-                <p>Descubrimiento de hosts, detección de servicios, versionado y scripts NSE para vulnerabilidades conocidas.</p>
-                <a href="pdfs/ciberseguridad/hacking-general/nmap-enumeracion.pdf">🔗 Ver proyecto (PDF) →</a>
+                <h4>🛡️ Instalación y configuración de Wazuh (SIEM)</h4>
+                <p>Despliegue completo de un servidor Wazuh configurado para detectar incidentes de seguridad en la red, incluyendo análisis de logs, detección de malware y monitorización de archivos.</p>
+                <a href="wazuh/wazuh_instalación_configuración_CarlesOchoa.pdf">🔗 Ver proyecto (PDF) →</a>
             </div>
             
             <div class="proyecto">
-                <h4>📄 Explotación con Metasploit (MS17-010 EternalBlue)</h4>
-                <p>Explotación de vulnerabilidad SMB en Windows 7/2008, obtención de shell reverse y post-explotación.</p>
-                <a href="pdfs/ciberseguridad/hacking-general/metasploit-eternalblue.pdf">🔗 Ver proyecto (PDF) →</a>
+                <h4>📈 Monitorización del aula con Zabbix</h4>
+                <p>Implementación de Zabbix para monitorizar equipos, creación de dashboards personalizados y mapas de red para detectar problemas en tiempo real.</p>
+                <a href="wazuh/Monitorización del aula_CarlesOchoa-1.pdf">🔗 Ver proyecto (PDF) →</a>
             </div>
+        </div>
+        
+        <!-- SECCIÓN 3: PRÓXIMAMENTE - HACKING WEB Y PENTESTING -->
+        <div class="subseccion">
+            <h3>🌐 Próximamente</h3>
             
             <div class="proyecto">
-                <h4>📄 Escalada de privilegios en Linux</h4>
-                <p>Técnicas: sudo mal configurado, SUID binarios, cron jobs, kernel exploits y herramientas como LinPEAS.</p>
-                <a href="pdfs/ciberseguridad/hacking-general/escalada-privilegios-linux.pdf">🔗 Ver proyecto (PDF) →</a>
-            </div>
-            
-            <div class="proyecto">
-                <h4>📄 Hardening de sistemas y aplicaciones</h4>
-                <p>Guiado de buenas prácticas: deshabilitar servicios innecesarios, aplicar parches, configurar logs y monitorización.</p>
-                <a href="pdfs/ciberseguridad/hacking-general/hardening-guia.pdf">🔗 Ver proyecto (PDF) →</a>
-            </div>
-            
-            <div class="proyecto">
-                <h4>📄 CTF (Capture The Flag) Writeup - Máquina "Blue" de HackTheBox</h4>
-                <p>Resolución paso a paso de una máquina vulnerable, desde enumeración hasta bandera final.</p>
-                <a href="pdfs/ciberseguridad/hacking-general/ctf-blue-writeup.pdf">🔗 Ver proyecto (PDF) →</a>
+                <h4>📄 Hacking Web y Pentesting</h4>
+                <p>Auditorías de seguridad, explotación de vulnerabilidades y pruebas de penetración en entornos controlados.</p>
+                <a href="#">🔗 Próximamente →</a>
             </div>
         </div>
     </div>
