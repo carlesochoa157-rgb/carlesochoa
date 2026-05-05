@@ -29,7 +29,7 @@
 <body>
     <header>
         <h1>🔒 Ciberseguridad</h1>
-        <p>Análisis Forense · SIEM (Wazuh) · Monitorización (Zabbix) · Incidentes</p>
+        <p>Análisis Forense · SIEM (Wazuh) · Monitorización (Zabbix) · Ataques · Pentesting</p>
     </header>
     <nav>
         <a href="index.html">🏠 Inicio</a>
@@ -42,12 +42,12 @@
     <div class="container">
         <div class="intro">
             <h2>📌 Proyectos de Ciberseguridad</h2>
-            <p>Especialización en análisis forense digital, despliegue de SIEM (Wazuh), monitorización con Zabbix y detección de incidentes.</p>
+            <p>Especialización en análisis forense digital (discos, RAM, móviles), despliegue de SIEM (Wazuh), monitorización con Zabbix, ataques con USB Rubber Ducky y explotación con Metasploit.</p>
         </div>
         
         <!-- SECCIÓN 1: ANÁLISIS FORENSE DIGITAL -->
         <div class="subseccion">
-            <h3>🕵️ Análisis Forense de equipos que han sido atacados</h3>
+            <h3>🕵️ Análisis Forense de equipos atacados</h3>
             
             <div class="proyecto">
                 <h4>💾 Clonación de discos</h4>
@@ -84,10 +84,23 @@
                 <p>Informe pericial completo sobre un caso real, analizando un disco Windows con metodología forense estándar.</p>
                 <a href="forense/informe forense judicial/INF-FOR-2026_INFORME_FORENSE_CarlesOchoa.pdf">🔗 Ver proyecto (PDF) →</a>
             </div>
+            
             <div class="proyecto">
-                <h4>⚖️ Análisis forense de discos y memoria RAM en Linux</h4>
-                <p>Análisis completo del sistema operativo linux en busqueda de malware y ataques.</p>
+                <h4>🐧 Análisis forense de discos y memoria RAM en Linux</h4>
+                <p>Análisis completo del sistema operativo Linux en búsqueda de malware y ataques.</p>
                 <a href="forense/linux/UD5ACT1_CarlesOchoa.pdf">🔗 Ver proyecto (PDF) →</a>
+            </div>
+            
+            <div class="proyecto">
+                <h4>📱 Análisis forense de dispositivos móviles (I)</h4>
+                <p>Análisis forense de móviles para investigar actividades sospechosas, conversaciones de WhatsApp y evidencias de ataques.</p>
+                <a href="forense/moviles/UD6ACT1_CarlesOchoa.pdf">🔗 Ver proyecto (PDF) →</a>
+            </div>
+            
+            <div class="proyecto">
+                <h4>📱 Análisis forense de dispositivos móviles (II)</h4>
+                <p>Extracción y análisis de conversaciones de WhatsApp, historiales y evidencias en dispositivos móviles.</p>
+                <a href="forense/moviles/UD6ACT2_CarlesOchoa.pdf">🔗 Ver proyecto (PDF) →</a>
             </div>
         </div>
         
@@ -108,14 +121,43 @@
             </div>
         </div>
         
-        <!-- SECCIÓN 3: PRÓXIMAMENTE - HACKING WEB Y PENTESTING -->
+        <!-- SECCIÓN 3: ATAQUES USB RUBBER DUCKY -->
         <div class="subseccion">
-            <h3>🌐 Próximamente</h3>
+            <h3>🐤 Ataques con USB Rubber Ducky</h3>
             
             <div class="proyecto">
-                <h4>📄 Hacking Web y Pentesting</h4>
-                <p>Auditorías de seguridad, explotación de vulnerabilidades y pruebas de penetración en entornos controlados.</p>
-                <a href="#">🔗 Próximamente →</a>
+                <h4>⌨️ Reverse Shell mediante Linux/Windows con RubberDucky</h4>
+                <p>Creación de payloads para USB Rubber Ducky que ejecutan reverse shells en sistemas Linux y Windows.</p>
+                <a href="ataques/usb_RubberDucky/Reverse shell mediante Linux_Windows_ConRubberDucky.pdf">🔗 Ver proyecto (PDF) →</a>
+            </div>
+            
+            <div class="proyecto">
+                <h4>🐍 ReverseShell con payload creado en Metasploit y utilizando RubberDucky</h4>
+                <p>Generación de payloads maliciosos con Metasploit y ejecución mediante USB Rubber Ducky para obtener acceso remoto.</p>
+                <a href="ataques/usb_RubberDucky/ReverseShell con payload creado en Metaesploit y utilizando con RubberDucky.pdf">🔗 Ver proyecto (PDF) →</a>
+            </div>
+        </div>
+        
+        <!-- SECCIÓN 4: METASPLOIT Y PENTESTING -->
+        <div class="subseccion">
+            <h3>⚡ Metasploit y Pentesting</h3>
+            
+            <div class="proyecto">
+                <h4>🖥️ Instalación de Metasploitable3 y reconocimiento con Metasploit</h4>
+                <p>Despliegue de máquina vulnerable Metasploitable3 y primeras fases de reconocimiento utilizando Metasploit.</p>
+                <a href="ataques/metaesploit/Práctica_ Instalación de Metasploitable3 y reconocimiento con Metasploit_CarlesOchoa.pdf">🔗 Ver proyecto (PDF) →</a>
+            </div>
+            
+            <div class="proyecto">
+                <h4>🔍 Enumeración y explotación con Metasploit</h4>
+                <p>Técnicas de enumeración de servicios y explotación de vulnerabilidades utilizando el framework Metasploit.</p>
+                <a href="ataques/metaesploit/Práctica 2_ Enumeración y explotación con Metasploit_CarlesOchoa.pdf">🔗 Ver proyecto (PDF) →</a>
+            </div>
+            
+            <div class="proyecto">
+                <h4>👑 Post-explotación, escalada de privilegios y persistencia</h4>
+                <p>Prácticas avanzadas de post-explotación, escalada de privilegios en sistemas comprometidos y establecimiento de persistencia.</p>
+                <a href="ataques/metaesploit/Práctica 3 — Post-explotación, escalada de privilegios y persistencia_CarlesOchoa (1).pdf">🔗 Ver proyecto (PDF) →</a>
             </div>
         </div>
     </div>
@@ -124,4 +166,3 @@
     </footer>
 </body>
 </html>
-
